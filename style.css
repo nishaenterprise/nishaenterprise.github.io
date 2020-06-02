@@ -106,30 +106,50 @@ margin-top: 30px;
 content: "";
 z-index: 2;
 position: absolute;
-background-color: rgba(255,255,255,.1);
-height: 60px;
+background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.05));
+height: 100px;
 width: 95%;
-top: 1100px;
+top: 1125px;
 left: 2.5%;
 border-radius: 20px;
 }
-#gmail span{
+#gmail span:nth-child(1){
 content: "";
 z-index: 2;
 position: absolute;
 background: linear-gradient(90deg,transparent,white,transparent);
 height: 3px;
 width: 50px;
-top: 1200px;
+top: 1284px;
 left: 2.5%;
-animation: go 10s infinite;
+animation: go1 10s infinite;
 animation-delay: 2s;
 }
-@keyframes go{
+@keyframes go1{
 0%{left: 2.5%;opacity: 0.1}
 10%{opacity:1}
-44%{opacity: 1;}
-60%{opacity: 0;}
+44%{opacity: 1}
+60%{opacity: 0}
 75%{left: 95%}
+100%{opacity: 0;}
+}
+#gmail span:nth-child(2){
+content: "";
+z-index: 2;
+position: absolute;
+background: linear-gradient(90deg,transparent,white,transparent);
+height: 3px;
+width: 50px;
+top: 1110px;
+left: 2.5%;
+animation: go2 10s infinite;
+animation-delay: 2s;
+}
+@keyframes go2{
+0%{left: 95%;opacity: 0.1}
+10%{opacity:1}
+44%{opacity: 1}
+60%{opacity: 0}
+75%{left: 2.5%}
 100%{opacity: 0;}
 }
